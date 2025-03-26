@@ -1,6 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "prettier", "cypress"],
   "extends": ["prettier"],
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -63,5 +63,8 @@
     "react": {
       "version": "detect"
     }
+  },
+  "env": {
+    "cypress/globals": true
   }
 }
