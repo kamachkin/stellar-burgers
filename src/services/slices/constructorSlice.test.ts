@@ -1,11 +1,6 @@
-import reducer, { addBun, addIngredient, removeIngredient } from './constructorSlice';
+import reducer, { addBun, addIngredient, removeIngredient, initialState } from './constructorSlice';
 
 describe('Редьюсер конструктора бургера', () => {
-  const initialState = {
-    bun: null,
-    ingredients: []
-  };
-
   it('должен вернуть начальное состояние', () => {
     expect(reducer(undefined, { type: 'unknown' })).toEqual(initialState);
   });

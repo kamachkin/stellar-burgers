@@ -4,7 +4,7 @@ describe('Stellar Burgers - Функционал конструктора бур
   beforeEach(function() {
     // Перехватываем запрос ингредиентов
     //@ts-ignore
-    cy.intercept('GET', 'https://norma.nomoreparties.space/api/ingredients', { fixture: 'ingredients.json' }).as('getIngredients');
+    cy.intercept('GET', 'https://norma.nomoreparties.space/api/ingredients', { fixture: 'example.json' }).as('getIngredients');
     
     // Перехватываем запрос создания заказа
     //@ts-ignore
