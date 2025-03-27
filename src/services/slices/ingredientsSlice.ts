@@ -10,7 +10,7 @@ interface IngredientsState {
 }
 
 // Начальное состояние
-const initialState: IngredientsState = {
+export const initialState: IngredientsState = {
   items: [],
   isLoading: false,
   hasError: false
